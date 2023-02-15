@@ -1,7 +1,6 @@
 import tkinter as tk
 import json
-
-
+import FileSegregator
 class Option2Screen(tk.Tk):
     def __init__(self, parent):
         super().__init__()
@@ -60,9 +59,10 @@ class Option2Screen(tk.Tk):
         self.parent.deiconify()
 
     def save_data(self):
+        filesPathInTestServer = FileSegregator.segregate_files(self.files_changed_entry.get("1.0", tk.END), "12.4")
         data = {
             "schema_name": self.customer_schema_entry.get(),
-            "file_paths": self.files_changed_entry.get("1.0", tk.END).split(",")[:-1],
+            "file_paths": filesPathInTestServer,
             "JIRA_ID": self.ticket_number_entry.get(),
         }
 
