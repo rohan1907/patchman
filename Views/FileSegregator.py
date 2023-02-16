@@ -12,6 +12,7 @@ def segregate_files(files, insta_version):
     # Make Testserver file path for each path
     file_paths = files.split(",")
     file_paths = [file_path.strip() for file_path in file_paths]
+    file_paths = [file_path.replace("\n","") for file_path in file_paths]
     files_path_in_testserver = []
 
     for file in file_paths:
