@@ -1,0 +1,7 @@
+sshpass -p "redhat" scp /target/classes/com/insta/hms/mdm/testorganization/TestOrganizationRepository.class root@172.16.18.22:/root/webapps/instahms/WEB-INF/classes/com/insta/hms/mdm/testorganization/TestOrganizationRepository.class
+sshpass -p "redhat" scp /target/classes/com/insta/hms/mdm/testorganization/TestOrganizationRepository.class root@172.16.18.22:/root/webapps/instahms/WEB-INF/classes/com/insta/hms/mdm/testorganization/TestOrganizationRepository.class
+sshpass -p "redhat" scp / root@172.16.18.22:/root/webapps/instahms/
+sshpass -p "redhat" scp /target/classes/com/insta/hms/mdm/testorganization/TestOrganizationRepository.class root@172.16.18.22:/root/webapps/instahms/WEB-INF/classes/com/insta/hms/mdm/testorganization/TestOrganizationRepository.class
+sshpass -p "redhat" scp /target/classes/com/insta/hms/mdm/testorganization/TestOrganizationRepository.class root@172.16.18.22:/root/webapps/instahms/WEB-INF/classes/com/insta/hms/mdm/testorganization/TestOrganizationRepository.class
+sshpass -p "redhat" scp /target/classes/com/insta/hms/mdm/testorganization/TestOrganizationRepository.class root@172.16.18.22:/root/webapps/instahms/WEB-INF/classes/com/insta/hms/mdm/testorganization/TestOrganizationRepository.class
+sshpass -p 'redhat' ssh root@172.16.18.24

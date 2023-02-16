@@ -54,7 +54,7 @@ class Option1Screen(tk.Tk):
         filesPathInTestServer = FileSegregator.segregate_files(localFilePath, self.insta_version_var.get())
         print(filesPathInTestServer)
 
-        BashScript.generateScriptForTestSrvr(filesPathInTestServer, localFilePath, self.test_server_var.get())
+        BashScript.generateScriptForTestSrvr(filesPathInTestServer, localFilePath, self.test_server_var.get(), "testsvr", True)
 
         tk.messagebox.showinfo("Success", "Data saved successfully!")
         self.destroy()
