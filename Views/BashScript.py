@@ -1,11 +1,12 @@
 #function to generate bash script for test server
 
-# sshpass -p "redhat" scp /home/eshwar/insta-hms/instahms/target/classes/com/insta/hms/core/billing/BillRepository.class root@testsvr4:~/webapps/instahms/WEB-INF/classes/com/insta/hms/core/billing/BillRepository.class
 
-def generateScriptForTestSrvr(serverFilePath, localFilePath, testServer):
+
+def createCopyCommand(serverFilePath, localFilePath, testServer):
     commands = []
     localFilePath = localFilePath.split(",")
     localFilePath = [file_path.strip() for file_path in localFilePath]
+    localFilePath = [file_path.trim() for file_path in localFilePath]
 
     testServerIp = 'root@172.16.18.22:'
 
@@ -20,6 +21,10 @@ def generateScriptForTestSrvr(serverFilePath, localFilePath, testServer):
         command += '/root/webapps'
         command += serverFilePath[i]
         commands.append(command)
+    return commands
+
+def generateScriptForTestSrvr(serverFilePath, localFilePath, testServer):
+    
     
 
 
