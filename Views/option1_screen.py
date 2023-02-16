@@ -2,6 +2,7 @@ import tkinter as tk
 import json
 import FileSegregator
 import BashScript
+from tkinter import messagebox
 
 class Option1Screen(tk.Tk):
     def __init__(self, parent):
