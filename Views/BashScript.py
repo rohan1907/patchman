@@ -41,6 +41,9 @@ def generateScriptForTestSrvr(serverFilePath, localFilePath, testServer, typeOfP
         if tomcatRestart:
             loginCommand += testServer[-1]
             commandsList.append(loginCommand)
+            commandsList.append("sudo su")
+            commandsList.append("etc/init.d/tomcat restart")
+
 
         script_command = "".join(commandsList)
         with open("bash_script.sh", "w") as file:
